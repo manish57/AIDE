@@ -11,7 +11,7 @@ export class NoteService{
 
     constructor(http: Http) {
         this.http = http;
-        this.apiKey = 'QuV-LCiIjeYAnl5TtATYL7lizSj4LplR';
+        this.apiKey = '<api-key>';
         this.notesUrl = 'https://api.mlab.com/api/1/databases/kotharisdb/collections/notesinfo';
     }
 
