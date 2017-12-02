@@ -1,0 +1,33 @@
+<!--
+  Generated template for the ItemChecklistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="danger" hideBackButton="true">
+      <ion-buttons right>
+        <button ion-button icon-only (click)="downloadCSV()">
+          <ion-icon name="download"></ion-icon>
+        </button>
+        <button ion-button icon-only (click)="addItem()">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-buttons left>
+          <button ion-button icon-only (click)="jumptoHome()">
+            <ion-icon name="home"></ion-icon>
+          </button>
+      </ion-buttons>
+      <ion-title>Item Checklist</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let item of items" (click)="itemSelected($event, item)">
+          {{item.city}}
+        </ion-item>
+      </ion-list>
+  </ion-content>

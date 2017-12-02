@@ -1,0 +1,38 @@
+
+<ion-header>
+    <ion-navbar color="danger" hideBackButton="true">
+      <ion-buttons right>
+          <button ion-button icon-only (click)="downloadCSV()">
+            <ion-icon name="download"></ion-icon>
+          </button>
+          <button ion-button icon-only (click)="addContact()">
+            <ion-icon name="add"></ion-icon>
+          </button>
+          <button ion-button icon-only (click)="cont()">
+            <ion-icon name="search"></ion-icon>
+          </button>
+      </ion-buttons>
+
+      <ion-buttons left>
+          <button ion-button icon-only (click)="jumptoHome()">
+            <ion-icon name="home"></ion-icon>
+          </button>
+      </ion-buttons>
+      <ion-title>Contacts</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+  <ion-searchbar placeholder="Enter display name" showCancelButton color="danger" [(ngModel)]="str" name="str" (keyup)="searchContact(str)"></ion-searchbar>
+  <ion-list *ngIf="searchResult">
+    <ion-item *ngFor="let contact of searchResult" (click)="contactSelected($event, contact)">
+      {{contact.firstname}} {{contact.lastname}}
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item *ngFor="let contact of contacts" (click)="contactSelected($event, contact)">
+      {{contact.firstname}} {{contact.lastname}}
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,75 @@
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>Add Contact</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (submit)="onSubmit(); myNgForm.resetForm()" #myNgForm="ngForm">
+    <ion-list>
+
+
+      <ion-item>
+        <ion-label floating>Firstname</ion-label>
+        <ion-input [(ngModel)]="firstname" name="firstname" type="text" required></ion-input>
+      </ion-item>
+        
+      <!--<ion-item *ngIf="firstname.errors && (firstname.dirty || firstname.touched)">
+          <p [hidden]="!firstname.errors.required">*Firstname is Required</p>
+      </ion-item>-->
+      
+
+      <ion-item>
+        <ion-label floating>Lastname</ion-label>
+        <ion-input [(ngModel)]="lastname" name="lastname" type="text"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label floating>Phone no</ion-label>
+        <ion-input [(ngModel)]="phoneno" name="phoneno" type="number"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label floating>Email-id</ion-label>
+        <ion-input [(ngModel)]="emailid" name="emailid" type="email"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label floating>Address</ion-label>
+        <ion-input [(ngModel)]="address" name="address" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>City</ion-label>
+        <ion-input [(ngModel)]="city" name="city" type="text"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label floating>Location</ion-label>
+        <ion-input [(ngModel)]="location" name="location" type="text"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label floating>Birthday</ion-label>
+        <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="birthday" name="birthday"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Note</ion-label>
+        <ion-textarea [(ngModel)]="note" name="note"></ion-textarea>
+      </ion-item> 
+
+      <ion-item>
+        <button ion-button type="submit" block>Add Contact</button>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>

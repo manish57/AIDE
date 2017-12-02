@@ -1,5 +1,8 @@
 {
   "name": "kotharisapp",
-  "app_id": "",
-  "type": "ionic-angular"
+  "app_id": "dae431bc",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

@@ -1,3 +1,32 @@
 page-home {
+    ion-icon {
+        font-size: 140px;
+      }
+    
+      ion-row {
+        height: 100%;
+        margin-top: 15%;
+        flex-wrap: wrap;
+      }
+    
+      ion-col {
+        flex: 0 0 25%;
+        max-width: 100%;
+        text-align: center;
+        padding: 10px 5px;
+      }
+      
+      ion-title {
+        text-align: center;
+      }
 
+      ion-label {
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        font-size: 16px;
+        font-weight: bold; 
+        line-height: 1.5;
+        color: #000;
+        text-align: center;
+      }
 }

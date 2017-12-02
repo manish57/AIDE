@@ -1,0 +1,41 @@
+page-note-details {
+    ion-card-header {
+        text-align: center;
+        letter-spacing: 1px !important;
+        word-spacing: 3px !important;
+        font-size: 24px !important;
+        font-weight: bold; 
+        line-height: 1.5 !important;
+        color: #000;
+    }
+
+    ion-card-content {
+        text-align: left;
+        letter-spacing: 1px !important;
+        word-spacing: 3px !important;
+        font-size: 20px !important;
+        font-weight: bold; 
+        line-height: 1.5 !important;
+        color: #000;
+    }
+
+    a {
+        font-size: 20px !important;
+        padding: 25px !important;
+    }
+
+    button {
+        font-size: 20px !important;
+        padding: 25px !important;
+    }
+
+    p {
+        text-align: left;
+        letter-spacing: 1px !important;
+        word-spacing: 3px !important;
+        font-size: 30px !important;
+        font-weight: bold; 
+        line-height: 1.5 !important;
+        color: #000;
+    }
+}

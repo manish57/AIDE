@@ -1,0 +1,73 @@
+<!--
+  Generated template for the AddItemPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="danger">
+      <ion-title>Add Items</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content padding>
+       <ion-list no-lines>
+      
+         <ion-item>
+           <ion-label floating>City</ion-label>
+           <ion-input [(ngModel)]="city" name="city" type="text" required></ion-input>
+         </ion-item>
+
+         <ion-item>
+            <ion-label floating>Date</ion-label>
+            <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="todaysdate" name="todaysdate" required></ion-datetime>
+          </ion-item>
+          <hr>
+
+         <ion-item>
+            <ion-label>Bracelets</ion-label>
+            <ion-input [(ngModel)]="bracelets" name="bracelets" type="number" placeholder="stock"></ion-input>
+            <ion-input [(ngModel)]="braceletsold" name="braceletsold" type="number" placeholder="sold"></ion-input>
+          </ion-item>
+       
+          <ion-item>
+              <ion-label>Bangles&nbsp;&nbsp;</ion-label>
+              <ion-input [(ngModel)]="bangles" name="bangles" type="number" placeholder="stock"></ion-input>
+              <ion-input [(ngModel)]="banglesold" name="banglesold" type="number" placeholder="sold"></ion-input>
+          </ion-item>
+         
+          <ion-item>
+              <ion-label>Lockets&nbsp;&nbsp;</ion-label>
+              <ion-input [(ngModel)]="lockets" name="lockets" type="number" placeholder="stock"></ion-input>
+              <ion-input [(ngModel)]="locketsold" name="locketsold" type="number" placeholder="sold"></ion-input>
+            </ion-item>
+         
+            <ion-item>
+                <ion-label>Ear Rings</ion-label>
+                <ion-input [(ngModel)]="earrings" name="earrings" type="number" placeholder="stock"></ion-input>
+                <ion-input [(ngModel)]="earringsold" name="earringsold" type="number" placeholder="sold"></ion-input>
+            </ion-item>         
+            
+            <ion-item>
+                <ion-label>Jhumkas&nbsp;</ion-label>
+                <ion-input [(ngModel)]="jhumka" name="jhumka" type="number" placeholder="stock"></ion-input>
+                <ion-input [(ngModel)]="jhumkasold" name="jhumkasold" type="number" placeholder="sold"></ion-input>
+              </ion-item>
+           
+              <ion-item>
+                  <ion-label>Necklace&nbsp;</ion-label>
+                  <ion-input [(ngModel)]="necklace" name="necklace" type="number" placeholder="stock"></ion-input>
+                  <ion-input [(ngModel)]="necklacesold" name="necklacesold" type="number" placeholder="sold"></ion-input>
+              </ion-item>
+
+            <ion-item>
+                <ion-label floating>Note</ion-label>
+                <ion-textarea [(ngModel)]="note" name="note"></ion-textarea>
+              </ion-item>
+          
+       </ion-list>
+      
+       <button ion-button full color="primary" (click)="save()">Save</button>
+      
+     </ion-content>

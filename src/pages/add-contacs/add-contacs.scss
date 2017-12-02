@@ -1,0 +1,28 @@
+page-add-contacs {
+    button {
+        font-size: 20px !important;
+        padding: 25px !important;
+    }
+
+    ion-item {
+        margin: 10px !important;
+    }
+
+    ion-label {
+        letter-spacing: 1px !important;
+        word-spacing: 3px !important;
+        font-size: 24px !important;
+        font-weight: bold; 
+        line-height: 1.5 !important;
+        color: #333333;
+    }
+
+    ion-input {
+        letter-spacing: 1px !important;
+        word-spacing: 3px !important;
+        font-size: 24px !important;
+        font-weight: bold; 
+        line-height: 1.5 !important;
+        color: #000;
+    }
+}

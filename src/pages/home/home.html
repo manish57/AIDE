@@ -1,17 +1,35 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar hideBackButton="true" color="danger">
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-icon name="contacts" color="primary" (click)="jumptoContactsPage()"></ion-icon>
+        <ion-label>Contacts</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-icon name="happy" color="bright" (click)="jumptoFeedbackPage()"></ion-icon>
+        <ion-label>Feedback</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-icon name="create" color="vibrant" (click)="jumptoNotePage()"></ion-icon>
+        <ion-label>Notes</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-icon name="clipboard" color="danger" (click)="jumptoItemChecklistPage()"></ion-icon>
+        <ion-label>Items Checklist</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-fab bottom right>
+      <button ion-fab (click)="aboutme()"><ion-icon name="md-information"></ion-icon></button>
+    </ion-fab>  
 </ion-content>

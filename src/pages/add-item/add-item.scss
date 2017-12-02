@@ -1,0 +1,43 @@
+page-add-item {
+    button {
+        font-size: 20px !important;
+        padding: 25px !important;
+    }
+
+    ion-item {
+        margin: 10px !important;
+
+    }
+
+    ion-label {
+        letter-spacing: 1px !important;
+        word-spacing: 2px !important;
+        font-size: 20px !important;
+        font-weight: bold; 
+        line-height: 1.5 !important;
+        color: #660202 !important;
+    }
+
+    ion-input {
+        letter-spacing: 1px !important;
+        word-spacing: 2px !important;
+        font-size: 20px !important;
+        font-weight: bold; 
+        line-height: 1.5 !important;
+        color: #000 !important;
+    }
+
+    /*.first-input {
+        width:40% !important;
+        border: 2px solid #0000ff !important;
+        margin-right: 50%;
+    } 
+
+    .second-input {
+        position:absolute;
+        width:40% !important;
+        border: 2px solid red !important;
+        margin-left: 20%;
+        margin-top: 17%;
+    }*/
+}
